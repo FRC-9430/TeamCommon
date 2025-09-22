@@ -190,4 +190,5 @@
   "editor.minimap.autohide": true,
   "editor.minimap.scale": 2,
   "editor.minimap.size": "fit",
+  "editor.detectIndentation": false,
 }
