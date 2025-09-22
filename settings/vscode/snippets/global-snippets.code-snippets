@@ -1,0 +1,151 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	// CTRL + H -- Find and replace:
+	// - "Brandon Bontrager" and any associated personal info, such as an email --> replace with your own
+	// - "bbontrager" --> replace with your own first initial + last name
+
+	"Developer Name - PERSONAL GMAIL":
+	{
+		"prefix": "name-personal-gmail"
+		, "description": "Add my name and gmail email."
+		, "body": [
+			"Brandon Bontrager <bbontrager89@gmail.com>"
+		]
+	},
+	"New Snippet":
+	{
+		"prefix": "new-snippet"
+		, "description": "Create a new VSCode Snippet"
+		, "body": [
+			  "\"${1:name}\": {"
+			, "    \"prefix\": \"${2:pref}\","
+			, "    \"description\": \"${3:desc}\","
+			, "    \"body\": ["
+			, "          \"${4:<CODE>\""
+			, "        , \"</CODE>}\""
+			, "    ],"
+			, "}"
+		]
+	},
+	"Timestamp 'YYYYMMDD.HHSS'":
+	{
+		"prefix": "ts-basic"
+		, "description": "Inserts a timestamp in the format 'YYYYMMDD.HHSS'"
+		, "body": [
+			"$CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE"
+		]
+	},
+	"Timestamp 'MM/DD/YYYY HH:SS'":
+	{
+		"prefix": "ts-common"
+		, "description": "Inserts a timestamp in the format 'MM/DD/YYYY HH:SS'"
+		, "body": [
+			"$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_YEAR $CURRENT_HOUR:$CURRENT_MINUTE"
+		]
+	},
+	"Timestamp 'YYYY/MM/DD HH:SS'":
+	{
+		"prefix": "ts-common-reversed"
+		, "description": "Inserts a timestamp in the format 'YYYY/MM/DD HH:SS'"
+		, "body": [
+			"$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE"
+		]
+	},
+	"Timestamp 'MM/DD/YYYY'":
+	{
+		"prefix": "ts-date"
+		, "description": "Inserts a date in the format 'MM/DD/YYYY'"
+		, "body": [
+			"$CURRENT_MONTH/$CURRENT_DATE/$CURRENT_YEAR"
+		]
+	},
+	"Timestamp 'YYYY/MM/DD'":
+	{
+		"prefix": "ts-date-reversed"
+		, "description": "Inserts a date in the format 'YYYY/MM/DD'"
+		, "body": [
+			"$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE"
+		]
+	},
+	"NOTE":
+	{
+		"prefix": "note"
+		, "description": "Inserts a generic NOTE tag."
+		, "body": [
+			"NOTE $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE bbontrager, ${0:comment}."
+		]
+	},
+	"TODO":
+	{
+		"prefix": "todo"
+		, "description": "Inserts a generic TODO tag."
+		, "body": [
+			"TODO $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE bbontrager, ${0:comment}."
+		]
+	},
+	"TODO Reverse Test":
+	{
+		"prefix": "todo-revert-code"
+		, "description": "Inserts a simple comment to remove a hardcoded test."
+		, "body": [
+			"TODO $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE bbontrager, Remove this hardcoded item."
+		]
+	},
+	"FIXME":
+	{
+		"prefix": "fixme"
+		, "description": "Inserts a generic FIXME tag."
+		, "body": [
+			"FIXME $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE bbontrager, ${0:comment}."
+		]
+	},
+	"Log Entry":
+	{
+		"prefix": "new-log-entry"
+		, "description": "Prepares a new log line"
+		, "body": [
+			": $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE ${1:bbontrager}, ${2}"
+		]
+	},
+	"CommitMessage": {
+		"prefix": "commit-message",
+		"description": "Inserts a template for a CMS commit message.",
+		"body": [
+			// https://dev.to/jacobherrington/how-to-write-useful-commit-messages-my-commit-message-template-20n9
+			// https://medium.com/@alex.wasik/create-a-custom-git-commit-template-84468232a459
+			  "${1:Subject}"
+			, ""
+			, "--------------------------------------------------------------------------------"
+			, "This commit addresses:"
+			, "  - ${2:Highlights"
+			, "  - [breaking-change] Highlights"
+			, "  - [new-feature] Highlights"
+			, "  - [enhancement] Highlights"
+			, "  - [bug-fix] Highlights"
+			, "  - [documentation] Highlights}"
+			, ""
+			, "${3:Body/Explanation}"
+			, "--------------------------------------------------------------------------------"
+			, ""
+			, "${4:Related Github Item(s)   : $5}"
+			, "${6:Co-Author(s)             : $7}"
+			, "${8:Relevant Links           : $9}"
+		],
+	}
+}

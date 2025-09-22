@@ -1,0 +1,82 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"New Reference Link": {
+		  "prefix"     : "md-new-ref"
+		, "description": "Prepare a labeled URL for cross-references."
+		, "body"       : [
+			  "- (<span id=\"${2:tag}\">${2:tag}</span>)"
+			, "  ${3:Title/description}"
+			, "  <br><${1:URL}>"
+		]
+	}
+	, "Cross Reference": {
+		  "prefix"     : "md-cross-ref"
+		, "description": "Prepare a cross-reference label."
+		, "body"       : [
+			  "([${1:SpanId}](#${1:SpanId}))"
+		]
+	}
+	, "Details Box - Plain": {
+		  "prefix"     : "md-details-box"
+		, "description": "Create an HTML <details> tag."
+		, "body"       : [
+			  "<details>"
+			, "    <summary>${2:Summary}</summary>"
+			, "    <pre class=\"output\">"
+			, "${1:Content}"
+			, "    </pre>"
+			, "</details>"
+			, "<br>"
+		]
+	}
+	, "Details Box - Success": {
+		  "prefix"     : "md-details-box-success"
+		, "description": "Create an HTML <details> tag."
+		, "body"       : [
+			  "<details class=\"success\">"
+			, "    <summary>${2:Summary}</summary>"
+			, "    <pre class=\"output\">"
+			, "${1:Content}"
+			, "    </pre>"
+			, "</details>"
+			, "<br>"
+		]
+	}
+	, "Details Box - Failure": {
+		  "prefix"     : "md-details-box-failure"
+		, "description": "Create an HTML <details> tag."
+		, "body"       : [
+			  "<details class=\"failure\">"
+			, "    <summary>${2:Summary}</summary>"
+			, "    <pre class=\"output\">"
+			, "${1:Content}"
+			, "    </pre>"
+			, "</details>"
+			, "<br>"
+		]
+	}
+	, "Banner": {
+		  "prefix"     : "md-banner"
+		, "description": "Create a banner DIV."
+		, "body"       : [
+			  "<div class=\"textBanner\">"
+			, "    <div style=\"text-align: center; font-size: 16px;\">"
+			, "        ${1:Content}"
+			, "    </div>"
+			, "</div>"
+		]
+	}
+	// See also: <K:\ISD - EAS\Staff\merritm\Templates\TEMPLATE.md>
+}
