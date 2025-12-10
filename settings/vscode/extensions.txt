@@ -1,0 +1,20 @@
+// copy and paste these into the CTRL+SHIFT+X (Extensions View) marketplace search
+// bar five at a time. Install all extensions that pop up.
+
+bierner.emojisense
+ms-python.black-formatter
+ms-vscode.cpptools
+vscjava.vscode-java-debug
+csholmq.excel-to-markdown-table
+
+ms-python.isort,
+redhat.java,
+bat67.markdown-extension-pack,
+vscjava.vscode-java-dependency,
+ms-python.vscode-pylance,
+
+ms-python.python,
+ms-python.debugpy,
+ms-python.vscode-python-envs,
+Gruntfuggly.todo-tree,
+wpilibsuite.vscode-wpilib
