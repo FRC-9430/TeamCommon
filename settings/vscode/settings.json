@@ -1,9 +1,6 @@
 {
   /** HOW TO USE THIS SETTINGS FILE
   *   Step 1. Update {PATH TO WPILIB} with your WPILIB home
-  *     On Windows: "C:\\Users\\Public\\.wpilib" (verify)
-  *     On Linux: "/home/username/wpilib" (verify)
-  *     On Mac: "/Users/username/wpilib" (verify)
   *   Step 2. Replace settings.json in your WPILIB User Data directory
   *   Step 3. Restart VSCode
   */
@@ -96,6 +93,9 @@
   /** IMPORTANT: ENSURE THESE SETTINGS POINT TO VALID WPILIB
   *   HOME DIRECTORY. MAKE SURE build.gradle CAN IDENTIFY 
   *   THE JVM FOR WPILIB. 
+  *   For windows: C:\\Users\\Public\\wpilib\\{YEAR}\\jdk
+  *   For linux: /home/username/wpilib/jdk
+  *   For mac: /Users/username/wpilib/jdk
   */
   "java.completion.matchCase": "off",
   "java.configuration.runtimes": [
@@ -159,6 +159,13 @@
   ],
 
   // Terminal settings: Configures the integrated terminal.
+  /** IMPORTANT: ENSURE THESE SETTINGS POINT TO VALID WPILIB
+  *   HOME DIRECTORY. MAKE SURE build.gradle CAN IDENTIFY 
+  *   THE JVM FOR WPILIB. 
+  *   For windows: C:\\Users\\Public\\wpilib\\{YEAR}\\jdk
+  *   For linux: /home/username/wpilib/jdk
+  *   For mac: /Users/username/wpilib/jdk
+  */
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.env.linux": {
@@ -166,8 +173,8 @@
     "PATH": "{PATH TO WPILIB}/jdk/bin:${env:PATH}"
   },
   "terminal.integrated.env.windows": {
-    "JAVA_HOME": "{PATH TO WPILIB}/jdk",
-    "PATH": "{PATH TO WPILIB}/jdk/bin;%PATH%"
+  "JAVA_HOME": "C:\\Users\\Public\\wpilib\\{YEAR}\\jdk",
+  "PATH": "C:\\Users\\Public\\wpilib\\{YEAR}\\jdk\\bin;${env:PATH}"
   },
   "terminal.integrated.env.macos": {
     "JAVA_HOME": "{PATH TO WPILIB}/jdk",
@@ -219,7 +226,7 @@
   "workbench.list.openMode": "doubleClick",
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "workbench.startupEditor": "newUntitledFile",
-  
+
   // Language-specific settings: Overrides for specific languages.
   "[markdown]": {
     "editor.detectIndentation": false,
