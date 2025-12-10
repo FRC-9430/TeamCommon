@@ -1,38 +1,45 @@
 {
-  "java.jdt.ls.java.home": "/home/bbont/wpilib/2025/jdk",
-  "extensions.autoUpdate": false,
-  "extensions.autoCheckUpdates": false,
-  "extensions.ignoreRecommendations": true,
-  "update.mode": "none",
-  "update.showReleaseNotes": false,
-  "java.completion.matchCase": "off",
+  /** HOW TO USE THIS SETTINGS FILE
+  *   Step 1. Update {PATH TO WPILIB} with your WPILIB home
+  *     On Windows: "C:\\Users\\Public\\.wpilib" (verify)
+  *     On Linux: "/home/username/wpilib" (verify)
+  *     On Mac: "/Users/username/wpilib" (verify)
+  *   Step 2. Replace settings.json in your WPILIB User Data directory
+  *   Step 3. Restart VSCode
+  */
+  "java.jdt.ls.java.home": "{PATH TO WPILIB}/jdk",
   "terminal.integrated.env.linux": {
-    "JAVA_HOME": "/home/bbont/wpilib/2025/jdk",
-    "PATH": "/home/bbont/wpilib/2025/jdk/bin:${env:PATH}"
+    "JAVA_HOME": "{PATH TO WPILIB}/jdk",
+    "PATH": "{PATH TO WPILIB}/jdk/bin:${env:PATH}"
   },
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-17",
-      "path": "/home/bbont/wpilib/2025/jdk",
+      "path": "{PATH TO WPILIB}/jdk",
       "default": true
     }
   ],
-  "redhat.telemetry.enabled": true,
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false,
+  "extensions.ignoreRecommendations": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "update.mode": "none",
+  "update.showReleaseNotes": false,
+  "java.completion.matchCase": "off",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "settingsSync.ignoredExtensions": [
+    "wpilibsuite.vscode-wpilib"
+  ],
+  "redhat.telemetry.enabled": false,
   "editor.acceptSuggestionOnEnter": "off",
   "editor.inlineSuggest.syntaxHighlightingEnabled": true,
   "outline.collapseItems": "alwaysCollapse",
   "editor.formatOnPaste": true,
   "diffEditor.codeLens": true,
-  // Place your settings in this file to overwrite the default settings
-  //-------- Editor configuration --------
-  // Controls the font family.
-  "editor.fontFamily": "DejaVu Sans Mono",
+  "editor.fontFamily": "Lucida Console",
   "editor.fontWeight": "normal",
-  // Controls visibility of the glyph margin
   "editor.glyphMargin": true,
-  // Controls whether the editor should render whitespace characters
   "editor.renderWhitespace": "all",
-  // Controls the rendering size of tabs in characters. Accepted values: "auto", 2, 4, 6, etc. If set to "auto", the value will be guessed when a file is opened.
   "editor.tabSize": 4,
   "editor.rulers": [
     80,
@@ -50,7 +57,6 @@
   "editor.stablePeek": true,
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "onlySnippets",
-  //-------- Files configuration --------
   "files.autoGuessEncoding": true,
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
@@ -71,7 +77,8 @@
   "debug.internalConsoleOptions": "neverOpen",
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "always",
-  "explorer.compactFolders": false,
+  "explorer.compactFolders": true,
+  "scm.defaultViewMode": "tree",
   "explorer.confirmDragAndDrop": false,
   "explorer.incrementalNaming": "smart",
   "git.autofetch": true,
@@ -105,14 +112,13 @@
   "workbench.list.horizontalScrolling": true,
   "workbench.list.openMode": "doubleClick",
   "workbench.startupEditor": "newUntitledFile",
-  //==== EMMET PREFERENCES ====
   "emmet.preferences": {
-    "filter.commentAfter": " <!-- /[#ID][.CLASS] -->",
+    "filter.commentAfter": " <!-- /[#ID][.CLASS] -->"
   },
   "emmet.syntaxProfiles": {
     "html": {
       "filters": "c"
-    },
+    }
   },
   "todo-tree.highlights.enabled": true,
   "todo-tree.general.revealBehaviour": "start of todo",
@@ -156,7 +162,7 @@
       "comments": "on",
       "strings": "on",
       "other": "on"
-    },
+    }
   },
   "[powershell]": {
     "editor.tabSize": 4,
@@ -168,7 +174,7 @@
     "editor.formatOnType": true
   },
   "[yml]": {
-    "editor.tabSize": 4,
+    "editor.tabSize": 4
   },
   "[xml]": {
     "editor.defaultFormatter": "DotJoshJohnson.xml"
@@ -187,8 +193,8 @@
   "editor.inlineSuggest.edits.showCollapsed": true,
   "terminal.integrated.middleClickBehavior": "paste",
   "terminal.integrated.tabStopWidth": 4,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.minimap.scale": 2,
   "editor.minimap.size": "fit",
-  "editor.detectIndentation": false,
+  "editor.detectIndentation": false
 }
