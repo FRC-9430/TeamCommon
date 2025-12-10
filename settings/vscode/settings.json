@@ -56,7 +56,7 @@
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 4,
-
+  
   // Emmet settings: Configures Emmet abbreviations and snippets.
   "emmet.preferences": {
     "filter.commentAfter": " <!-- /[#ID][.CLASS] -->"
@@ -169,7 +169,7 @@
     "JAVA_HOME": "{PATH TO WPILIB}/jdk",
     "PATH": "{PATH TO WPILIB}/jdk/bin;%PATH%"
   },
-  "terminal.integrated.env.macos": { 
+  "terminal.integrated.env.macos": {
     "JAVA_HOME": "{PATH TO WPILIB}/jdk",
     "PATH": "{PATH TO WPILIB}/jdk/bin:${env:PATH}"
   },
@@ -219,7 +219,7 @@
   "workbench.list.openMode": "doubleClick",
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "workbench.startupEditor": "newUntitledFile",
-
+  
   // Language-specific settings: Overrides for specific languages.
   "[markdown]": {
     "editor.detectIndentation": false,
