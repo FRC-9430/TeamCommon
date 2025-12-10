@@ -9,7 +9,7 @@ To configure your environment, please follow this guide to get on the same page 
 
 1. VSCode W/ WPILib must be installed "For All Users" during installation via ISO.
     An admin may need to assist with this installation.
-2. Modify settings.json to ensure the paths to WPILib are correct.
+2. Modify settings.json to ensure the paths to WPILib are correct. Use CTRL+H/Find and replace.
     You will receive errors notifying you that a path to your JVM is invalid.
 3. Modify snippets in `snippets/` to match your name and username as
     prompted by the comments in the file.

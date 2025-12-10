@@ -1,8 +1,11 @@
 {
     /** HOW TO USE THIS SETTINGS FILE
-  *   Step 1. Update {PATH TO WPILIB} with your WPILIB home
+  *   Step 1. Update {PATH TO WPILIB}/{YEAR} with your WPILIB home
   *   Step 2. Replace settings.json in your WPILIB User Data directory
   *   Step 3. Restart VSCode
+  *   For windows: C:/Users/Public/wpilib/{YEAR}/jdk
+  *   For linux: /home/{USERNAME}/wpilib/{YEAR}jdk
+  *   For mac: /Users/username/wpilib/jdk
   */
     // Breadcrumbs settings: Configures breadcrumb navigation.
     "breadcrumbs.enabled": true,
@@ -85,7 +88,7 @@
     /** IMPORTANT: ENSURE THESE SETTINGS POINT TO VALID WPILIB
   *   HOME DIRECTORY. MAKE SURE build.gradle CAN IDENTIFY
   *   THE JVM FOR WPILIB.
-  *   For windows: C:\\Users\\Public\\wpilib\\{YEAR}\\jdk
+  *   For windows: C:/Users/Public/wpilib/{YEAR}/jdk
   *   For linux: /home/{USERNAME}/wpilib/{YEAR}jdk
   *   For mac: /Users/username/wpilib/jdk
   */
@@ -143,7 +146,7 @@
     /** IMPORTANT: ENSURE THESE SETTINGS POINT TO VALID WPILIB
   *   HOME DIRECTORY. MAKE SURE build.gradle CAN IDENTIFY
   *   THE JVM FOR WPILIB.
-  *   For windows: C:\\Users\\Public\\wpilib\\{YEAR}\\jdk
+  *   For windows: C:/Users/Public/wpilib/{YEAR}/jdk
   *   For linux: /home/{USERNAME}/wpilib/{YEAR}jdk
   *   For mac: /Users/username/wpilib/jdk
   */
@@ -154,8 +157,8 @@
         "PATH": "{PATH TO WPILIB}/{YEAR}/jdk/bin:${env:PATH}"
     },
     "terminal.integrated.env.windows": {
-        "JAVA_HOME": "C:\\Users\\Public\\wpilib\\{YEAR}\\jdk",
-        "PATH": "C:\\Users\\Public\\wpilib\\{YEAR}\\jdk\\bin;${env:PATH}"
+        "JAVA_HOME": "{PATH TO WPILIB}/{YEAR}/jdk",
+        "PATH": "{PATH TO WPILIB}/{YEAR}/jdk/bin;${env:PATH}"
     },
     "terminal.integrated.env.macos": {
         "JAVA_HOME": "{PATH TO WPILIB}/{YEAR}/jdk",
@@ -217,7 +220,7 @@
     },
     "[powershell]": {
         "editor.tabSize": 4,
-        "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+        "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}/|;:'\",.<>/?",
     },
     "[python]": {
         "editor.formatOnType": true,
