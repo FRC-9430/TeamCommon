@@ -87,18 +87,18 @@
   *   HOME DIRECTORY. MAKE SURE build.gradle CAN IDENTIFY
   *   THE JVM FOR WPILIB.
   *   For windows: C:\\Users\\Public\\wpilib\\{YEAR}\\jdk
-  *   For linux: /home/username/wpilib/jdk
+  *   For linux: /home/{USERNAME}/wpilib/{YEAR}jdk
   *   For mac: /Users/username/wpilib/jdk
   */
     "java.completion.matchCase": "off",
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-17",
-            "path": "{PATH TO WPILIB}/jdk",
+            "path": "{PATH TO WPILIB}/{YEAR}/jdk",
             "default": true
         }
     ],
-    "java.jdt.ls.java.home": "{PATH TO WPILIB}/jdk",
+    "java.jdt.ls.java.home": "{PATH TO WPILIB}/{YEAR}/jdk",
     // JSON settings: Configures JSON file handling.
     "json.schemas": [
         {
@@ -145,22 +145,22 @@
   *   HOME DIRECTORY. MAKE SURE build.gradle CAN IDENTIFY
   *   THE JVM FOR WPILIB.
   *   For windows: C:\\Users\\Public\\wpilib\\{YEAR}\\jdk
-  *   For linux: /home/username/wpilib/jdk
+  *   For linux: /home/{USERNAME}/wpilib/{YEAR}jdk
   *   For mac: /Users/username/wpilib/jdk
   */
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.env.linux": {
-        "JAVA_HOME": "{PATH TO WPILIB}/jdk",
-        "PATH": "{PATH TO WPILIB}/jdk/bin:${env:PATH}"
+        "JAVA_HOME": "{PATH TO WPILIB}/{YEAR}/jdk",
+        "PATH": "{PATH TO WPILIB}/{YEAR}/jdk/bin:${env:PATH}"
     },
     "terminal.integrated.env.windows": {
         "JAVA_HOME": "C:\\Users\\Public\\wpilib\\{YEAR}\\jdk",
         "PATH": "C:\\Users\\Public\\wpilib\\{YEAR}\\jdk\\bin;${env:PATH}"
     },
     "terminal.integrated.env.macos": {
-        "JAVA_HOME": "{PATH TO WPILIB}/jdk",
-        "PATH": "{PATH TO WPILIB}/jdk/bin:${env:PATH}"
+        "JAVA_HOME": "{PATH TO WPILIB}/{YEAR}/jdk",
+        "PATH": "{PATH TO WPILIB}/{YEAR}/jdk/{YEAR}/bin:${env:PATH}"
     },
     "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontSize": 14,
