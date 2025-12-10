@@ -17,17 +17,9 @@
 	// }
 
 	// CTRL + H -- Find and replace:
-	// - "Brandon Bontrager" and any associated personal info, such as an email --> replace with your own
-	// - "bbontrager" --> replace with your own first initial + last name
+	// - "[YOUR NAME]" and any associated personal info, such as an email --> replace with your own
+	// - "[YOUR USERNAME]" --> replace with your own first initial + last name
 
-	"Developer Name - PERSONAL GMAIL":
-	{
-		"prefix": "name-personal-gmail"
-		, "description": "Add my name and gmail email."
-		, "body": [
-			"Brandon Bontrager <bbontrager89@gmail.com>"
-		]
-	},
 	"New Snippet":
 	{
 		"prefix": "new-snippet"
@@ -88,7 +80,7 @@
 		"prefix": "note"
 		, "description": "Inserts a generic NOTE tag."
 		, "body": [
-			"NOTE $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE bbontrager, ${0:comment}."
+			"NOTE $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE [YOUR USERNAME], ${0:comment}."
 		]
 	},
 	"TODO":
@@ -96,7 +88,7 @@
 		"prefix": "todo"
 		, "description": "Inserts a generic TODO tag."
 		, "body": [
-			"TODO $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE bbontrager, ${0:comment}."
+			"TODO $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE [YOUR USERNAME], ${0:comment}."
 		]
 	},
 	"TODO Reverse Test":
@@ -104,7 +96,7 @@
 		"prefix": "todo-revert-code"
 		, "description": "Inserts a simple comment to remove a hardcoded test."
 		, "body": [
-			"TODO $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE bbontrager, Remove this hardcoded item."
+			"TODO $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE [YOUR USERNAME], Remove this hardcoded item."
 		]
 	},
 	"FIXME":
@@ -112,7 +104,7 @@
 		"prefix": "fixme"
 		, "description": "Inserts a generic FIXME tag."
 		, "body": [
-			"FIXME $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE bbontrager, ${0:comment}."
+			"FIXME $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE [YOUR USERNAME], ${0:comment}."
 		]
 	},
 	"Log Entry":
@@ -120,7 +112,7 @@
 		"prefix": "new-log-entry"
 		, "description": "Prepares a new log line"
 		, "body": [
-			": $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE ${1:bbontrager}, ${2}"
+			": $CURRENT_YEAR$CURRENT_MONTH$CURRENT_DATE.$CURRENT_HOUR$CURRENT_MINUTE ${1:[YOUR USERNAME]}, ${2}"
 		]
 	},
 	"CommitMessage": {

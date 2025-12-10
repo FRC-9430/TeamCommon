@@ -26,7 +26,7 @@
 			"/**",
 			" * ${1:Brief description of the method or class.}",
 			" * ",
-			" * @author Your Full Name",
+			" * @author Name, Username",
 			" * ${2: * @param ${3:param_name} description of the parameter.}",
 			" * ${4: * @return ${5:return_type} description of the return value.}",
 			" */"
